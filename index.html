@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <nav>
+                <ul>
+                    <li><a href="#portfolio" class="nav-link" id="portfolio-link">Portfolio</a></li>
+                    <li><a href="#about-me" class="nav-link">About Me</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </nav>            
+        </nav>
+
+        <script>
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function() {
+                    document.querySelectorAll('.nav-link').forEach(nav => nav.classList.remove('active'));
+                    this.classList.add('active');
+                });
+            });
+        </script>
+        
+    </header>
+    <section class="hero">
+        <div class="profile">
+            <img src="Profile.jpeg" alt="Profile Photo">
+            <h1>Armar Jun P. Acuzar</h1>
+            <p></p>
+        </div>
+    </section>
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <p></p>
+    </section>
+    <section id="projects" class="projects">
+        <h2>Projects</h2>
+        <p></p>
+        <!-- Add project details here -->
+    </section>
+    <section id="skills" class="skills">
+        <h2>Skills</h2>
+        <p></p>
+        <!-- Add skill details here -->
+    </section>
+    <section id="contact" class="contact">
+        <h2>Contact</h2>
+        <p></p>
+        <!-- Add contact details here -->
+    </section>
+    <footer>
+        <p>copyright © 2025 AJ Acuzar. All Rights Reserved.</p>
+    </footer>
+</body>
+</html>

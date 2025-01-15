@@ -1,0 +1,126 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #3f3c3c;
+}
+
+/* Header Navigation */
+header {
+    background: #ffffff;
+    color: #fff;
+    padding: 1rem 0;
+}
+
+nav ul {
+    display: flex;
+    justify-content: left;
+    list-style: none;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #7a2222;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/* Hero Section */
+.hero {
+    background: #ccc;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.profile img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.profile h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.profile p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* About Section */
+.about,
+.projects,
+.skills,
+.contact {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.about h2,
+.projects h2,
+.skills h2,
+.contact h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 20px;
+}
+
+/* Base styles for the nav links */
+.nav-link {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    padding: 10px 15px;
+    display: inline-block;
+    position: relative;
+    transition: all 0.3s ease; /* Smooth transition */
+}
+
+/* Add hover effect with scale and color */
+.nav-link:hover {
+    color: white;
+    background-color: #0a9b7b; /* Blue background */
+    border-radius: 5px; /* Rounded corners */
+    transform: scale(1.1); /* Slightly increase size */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+}
+
+/* Animation for the active state */
+.nav-link.active {
+    color: white;
+    background-color: #007bff; /* Blue background */
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: button-click 0.2s ease-out; /* Add click animation */
+}
+
+/* Keyframes for click animation */
+@keyframes button-click {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.9); /* Shrink slightly */
+    }
+    100% {
+        transform: scale(1); /* Back to normal size */
+    }
+}
